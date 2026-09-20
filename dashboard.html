@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | My Blog</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="logo">
+            <a href="index.html">My Blog</a>
+        </div>
+
+        <!-- Menu Button -->
+
+        <button class="menu-button" id="menuButton" aria-label="Open Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </header>
+
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-header">
+
+            <div class="sidebar-brand">
+                <span class="sidebar-brand-icon">
+                    <i class="fa-solid fa-pen-nib"></i>
+                </span>
+
+                <div>
+                    <h2>My Blog</h2>
+                    <span>Menu</span>
+                </div>
+            </div>
+
+            <button class="close-button" id="closeButton" aria-label="Close Menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="index.html">
+
+                <span class="sidebar-icon">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+
+                <span>Home</span>
+
+            </a>
+
+
+            <a href="dashboard.html" class="active">
+
+                <span class="sidebar-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </span>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="login.html">
+
+                <span class="sidebar-icon">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </span>
+
+                <span>Logout</span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-footer">
+
+            <div class="sidebar-footer-icon">
+                <i class="fa-regular fa-lightbulb"></i>
+            </div>
+
+            <div>
+                <strong>Keep creating</strong>
+                <p>Share your next idea.</p>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Sidebar Overlay -->
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+
+    <!-- Dashboard -->
+
+    <main class="dashboard-page">
+
+        <!-- Dashboard Intro -->
+
+        <section class="dashboard-intro">
+
+            <div>
+
+                <span class="dashboard-tag">
+                    ✦ Your workspace
+                </span>
+
+                <h1>
+                    Welcome back,
+                    <span>Writer.</span>
+                </h1>
+
+                <p>
+                    Manage your blogs, track your posts and
+                    create something new.
+                </p>
+
+            </div>
+
+            <a href="create-blog.html" class="dashboard-create-button">
+                + Create Blog
+            </a>
+
+        </section>
+
+
+        <!-- Statistics -->
+
+        <section class="dashboard-stats">
+
+            <div class="dashboard-stat-card">
+
+                <div class="stat-icon">
+                    ✎
+                </div>
+
+                <div>
+                    <span>Total Blogs</span>
+                    <strong>3</strong>
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-stat-card">
+
+                <div class="stat-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <span>Published</span>
+                    <strong>2</strong>
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-stat-card">
+
+                <div class="stat-icon">
+                    ◷
+                </div>
+
+                <div>
+                    <span>Drafts</span>
+                    <strong>1</strong>
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-stat-card">
+
+                <div class="stat-icon">
+                    ★
+                </div>
+
+                <div>
+                    <span>Readers</span>
+                    <strong>50+</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- My Blogs -->
+
+        <section class="dashboard-blogs">
+
+            <div class="dashboard-section-heading">
+
+                <div>
+
+                    <span>YOUR CONTENT</span>
+
+                    <h2>
+                        My Blogs
+                    </h2>
+
+            <div class="dashboard-blog-grid">
+
+                <!-- Blog 1 -->
+
+                <article class="dashboard-blog-card">
+
+                    <div class="dashboard-blog-top">
+
+                        <span>
+                            WEB DEVELOPMENT
+                        </span>
+
+                        <small>
+                            Published
+                        </small>
+
+                    </div>
+
+                    <h3>
+                        My First Blog
+                    </h3>
+
+                    <p>
+                        This is my first blog post on My Blog
+                        website.
+                    </p>
+
+                    <div class="dashboard-blog-bottom">
+
+                        <span>
+                            5 min read
+                        </span>
+
+                        <a href="create-blog.html">
+                            View →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Blog 2 -->
+
+                <article class="dashboard-blog-card">
+
+                    <div class="dashboard-blog-top">
+
+                        <span>
+                            CODING
+                        </span>
+
+                        <small>
+                            Published
+                        </small>
+
+                    </div>
+
+                    <h3>
+                        Web Development Basics
+                    </h3>
+
+                    <p>
+                        Learning the basics of HTML, CSS and
+                        JavaScript.
+                    </p>
+
+                    <div class="dashboard-blog-bottom">
+
+                        <span>
+                            4 min read
+                        </span>
+
+                        <a href="create-blog.html">
+                            View →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Blog 3 -->
+
+                <article class="dashboard-blog-card">
+
+                    <div class="dashboard-blog-top">
+
+                        <span>
+                            LEARNING
+                        </span>
+
+                        <small class="draft-status">
+                            Draft
+                        </small>
+
+                    </div>
+
+                    <h3>
+                        My Coding Journey
+                    </h3>
+
+                    <p>
+                        Some thoughts about learning web
+                        development.
+                    </p>
+
+                    <div class="dashboard-blog-bottom">
+
+                        <span>
+                            Draft
+                        </span>
+
+                        <a href="create-blog.html">
+                            Continue →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Quick Action -->
+
+        <section class="dashboard-cta">
+
+            <div>
+
+                <span>READY TO WRITE?</span>
+
+                <h2>
+                    Turn your next idea into a story.
+                </h2>
+
+                <p>
+                    Start writing and share something meaningful.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <h2>My Blog</h2>
+
+                <p>
+                    A simple space to write, share and discover ideas.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 My Blog. Built as a web development project.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
